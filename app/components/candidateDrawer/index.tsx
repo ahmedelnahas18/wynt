@@ -108,7 +108,7 @@ export default function CandidateDrawer({ opened, close }: CandidateDrawerProps)
               Hiring a supervisor
             </Pill>
             <Pill className="px-2 bg-midGray rounded-md">
-              Hiring a <supervisor></supervisor>
+              Hiring a supervisor
             </Pill>
             <Pill className="px-2 bg-midGray rounded-md">
               Hiring a supervisor
