@@ -2,7 +2,7 @@ import { Card, Text, Group, Flex, NavLink, Stack } from "@mantine/core";
 import { GoPerson } from "react-icons/go";
 
 
-export default function Stats({statType, statNumer, statAnalysis}) {
+export default function Stats({statType}) {
     statNumer=0
     statAnalysis='More 12 applicants compared to last month.'
   return (
