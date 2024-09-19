@@ -7,7 +7,7 @@ import FreePlane from "../cards/freePlanCard";
 import ProfileSettings from "../cards/profileSettingsCard";
 import Link from "next/link";
 
-export default function Sidebar({ opened }) {
+export default function Sidebar() {
   const sideItems = getSidebarItems();
   const [selectedItem, setSelectedItem] = useState();
   return (
