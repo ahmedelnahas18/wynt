@@ -12,14 +12,19 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import CandidateCard from "../candidatesCard";
 
-export default function CollapsingCard({ title, card }) {
+interface CollapsingCardProps {
+  title: string;
+  card: React.ReactNode;
+}
+
+export default function CollapsingCard({ title, card }: CollapsingCardProps) {
   const jobs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  //   const jobs = [];
   const [opened, { toggle }] = useDisclosure(false);
+
   return (
     <div>
       <Flex m="md" c="white" direction="row" justify="space-between">
-        <Text style={{ fontSize: "27px" }}>{title} </Text>
+        <Text style={{ fontSize: "27px" }}>{title}</Text>
         <Button c="lightPurple" bg="transparent" onClick={toggle}>
           {opened ? "View Less" : "View More"}
         </Button>
