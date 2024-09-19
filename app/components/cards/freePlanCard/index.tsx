@@ -1,7 +1,7 @@
 import { Card, Text, Progress, Button } from "@mantine/core";
 
 export default function FreePlane() {
-  jobNumber=5
+  const jobNumber=5
   return (
     <Card className='!bg-elementBackground !border !border-grayBorder/50'>
       <Text className='!text-lg !mb-2' >Free Plane</Text>
