@@ -41,7 +41,7 @@ export default function Main() {
       </Flex>
 
       {jobs.length === 0 && (
-        <div class="flex flex-col flex-1 items-center justify-center">
+        <div className="flex flex-col flex-1 items-center justify-center">
           <FirstJobCard />
         </div>
       )}
