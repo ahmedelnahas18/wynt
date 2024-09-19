@@ -8,7 +8,7 @@ export default function RootLayout({ children }: { children: any }) {
       <AppShell
       className='bg-darkBackground'
         navbar={{
-          width: 250,
+          width: 250
         }}>
         <AppShell.Navbar>
           <Sidebar />          
