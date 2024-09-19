@@ -176,7 +176,7 @@ export default function CandidatesDragDrop() {
                     ref={provided.innerRef}
                     style={{ minHeight: "10rem" }}
                   >
-                    {state[column.id]?.map((item, index) => (
+                      {state[column.id as ColumnKey]?.map((item, index) => (
                       <Draggable
                         key={item.id}
                         draggableId={item.id}
