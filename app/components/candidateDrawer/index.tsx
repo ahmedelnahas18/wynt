@@ -14,7 +14,7 @@ import {
 } from "@mantine/core";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
-export default function CandidateDrawer({ opened: any, close: any }) {
+export default function CandidateDrawer({ opened, close }) {
   return (
     <Drawer
       size="lg"
