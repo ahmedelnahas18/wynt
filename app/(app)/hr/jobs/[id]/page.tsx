@@ -13,8 +13,8 @@ type Props = {
 };
 
 export default function Page({ params: { id } }: Props) {
-  const jobs = []
-  // const jobs=[1,2,3,4,56,7,8]
+  // const jobs = []
+  const jobs=[1,2,3,4,56,7,8]
   return (
     <Stack className='min-h-screen'>
        <Flex  m="sm" justify="space-between">
