@@ -9,7 +9,10 @@ import {
 } from "@hello-pangea/dnd";
 import CandidateCard from "../cards/candidatesCard";
 
-const initialData = {
+// Define a type for the column keys
+type ColumnKey = "All-candidates" | "Shortlisted" | "Interviewed";
+
+const initialData: Record<ColumnKey, { id: string; name: string; level: string; score: string; phone: string; email: string; rating: number; }[]> = {
   "All-candidates": [
     {
       id: "1",
@@ -132,10 +135,12 @@ export default function CandidatesDragDrop() {
   const handleDragEnd = (result: DropResult) => {
     const { destination, source } = result;
 
+    // If no destination, return early
     if (!destination) return;
 
-    const fromColumn = source.droppableId;
-    const toColumn = destination.droppableId;
+    // Use ColumnKey type to enforce that the keys are valid
+    const fromColumn = source.droppableId as ColumnKey;
+    const toColumn = destination.droppableId as ColumnKey;
     const fromIndex = source.index;
     const toIndex = destination.index;
 
