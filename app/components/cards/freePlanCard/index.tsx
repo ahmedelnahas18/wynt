@@ -1,6 +1,6 @@
 import { Card, Text, Progress, Button } from "@mantine/core";
 
-export default function FreePlane({jobNumber}) {
+export default function FreePlane() {
   jobNumber=5
   return (
     <Card className='!bg-elementBackground !border !border-grayBorder/50'>
