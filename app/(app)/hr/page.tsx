@@ -19,7 +19,6 @@ import FirstJobCard from "../../components/cards/createFirstJobCard";
 import JobCard from "../../components/cards/jobCard";
 import CandidateCard from "../../components/cards/candidatesCard";
 import { useDisclosure } from "@mantine/hooks";
-import JobLink from "../../components/cards/jobLink";
 import CollapsingCard from "../../components/cards/collapsingCard";
 
 export default function Main() {
