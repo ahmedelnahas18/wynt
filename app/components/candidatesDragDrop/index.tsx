@@ -1,7 +1,12 @@
 "use client";
 import { useState } from "react";
 import { Text, Card, Group, Title, Flex } from "@mantine/core";
-import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+import {
+  DragDropContext,
+  Droppable,
+  Draggable,
+  DropResult,
+} from "@hello-pangea/dnd";
 import CandidateCard from "../cards/candidatesCard";
 
 const initialData = {
@@ -124,7 +129,9 @@ const initialData = {
 export default function CandidatesDragDrop() {
   const [state, setState] = useState(initialData);
 
-  const handleDragEnd = ({ destination, source }) => {
+  const handleDragEnd = (result: DropResult) => {
+    const { destination, source } = result;
+
     if (!destination) return;
 
     const fromColumn = source.droppableId;
